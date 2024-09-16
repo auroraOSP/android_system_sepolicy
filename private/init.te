@@ -860,3 +860,5 @@ neverallow { domain -init } property_service_version_prop:property_service set;
 
 # Only init can set keystore.boot_level
 neverallow { domain -init } keystore_listen_prop:property_service set;
+
+allow init sysfs_devices_system_cpu:file rw_file_perms;
